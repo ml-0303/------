@@ -1,0 +1,416 @@
+@font-face {
+	font-family: 'sz';
+	src: url("../assets/bigHome/zd.ttf");
+}
+ul{
+	padding: 0!important;
+	margin: 0!important;
+}
+.home {
+	color: #d3d6dd;
+	width: 1920px;
+	height: 100%;
+	overflow: hidden;
+}
+
+.screenBg {
+	width: 100%;
+	height: 100%;
+	background: url("../assets/home/bghf.png")no-repeat;
+	background-size: cover;
+}
+
+.headBox {
+	width: 100%;
+	height: 85px;
+	overflow: hidden;
+}
+
+.dateBox {
+	float: right;
+	margin-top: 2.5%;
+	margin-right: 2.5%;
+}
+
+.dateBox p {
+	font-size: 25px;
+	color: #fff;
+	font-family: sz;
+	text-shadow: 0px 0px 7px rgba(52, 255, 204, 0.1);
+	background: linear-gradient(180deg, #ffffff 16%, #289cff 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.mainBox {
+	width: 100%;
+	min-height: 100vh;
+	overflow: hidden;
+	position: relative;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+.leftBox {
+	width: 26%;
+	height: 900px;
+	margin-left: .9%;
+	float: left;
+}
+
+.midBox {
+	width: 45%;
+	height: 946px;
+	margin-top: 1%;
+	float: left;
+}
+
+.rightBox {
+	width: 26%;
+	height: 900px;
+	margin-right: 1.5%;
+	float: right;
+}
+
+.titleBox {
+	width: 100%;
+	height: 42px;
+	background: url("../assets/home/title.png")no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+.todaytitleBox{
+	width: 100%;
+	height: 42px;
+	overflow: hidden;
+}
+
+.titleText {
+	width: auto;
+	line-height: 40px;
+	font-size: 20px;
+	margin-left: 8%;
+	font-weight: bold;
+	padding-left: 5%;
+	color: #fff;
+	text-shadow: 0px 0px 7px rgba(52, 255, 204, 0.1);
+	background: linear-gradient(180deg, #ffffff 16%, #289cff 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	float: left;
+}
+.titleIcon{
+	width: 15px;
+	height: 15px;
+	float: left;
+	background: url("../assets/home/tcp.png")no-repeat;
+	margin-top: 2.5%;
+	margin-left: 2%;
+}
+
+.topMinBox {
+	width: 100%;
+	height: 360px;
+	overflow: hidden;
+}
+
+.leftCenterBox{
+	width: 100%;
+	height: 330px;
+	overflow: hidden;
+}
+.rightTopBox{
+	height: 450px;
+}
+
+.today {
+  width: 100%;
+  line-height: 40px;
+  font-size: 35px;
+  font-weight: bold;
+  padding: 0;
+  color: #fff;
+  text-shadow: 0px 0px 7px rgba(52, 255, 204, 0.1);
+  background: linear-gradient(180deg, #ffffff 16%, #289cff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.nineBox {
+	width: 100%;
+	height: 100px;
+	margin-top: 3%;
+}
+
+.helpBoxSjTit {
+	font-size: 20px;
+	color: #fff;
+	margin: 0px !important;
+	text-align: left;
+	padding-top: 2%;
+}
+
+/* 图表容器样式 */
+.chart-container {
+	background: rgba(255, 255, 255, 0.05);
+	border-radius: 8px;
+	padding: 15px;
+}
+
+/* 表格样式 */
+.leftBtmBox {
+	width: 100%;
+	height: 220px;
+	overflow: hidden;
+}
+
+.chart-wrapper {
+	width: 100%;
+	height: calc(100% - 42px);
+	overflow-y: auto;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+}
+
+.chart-wrapper::-webkit-scrollbar {
+	display: none;
+}
+
+/* 强制图表容器高度以产生滚动 */
+.chart-wrapper .monthly-people-chart {
+	height: 400px;
+}
+
+.chart-wrapper .monthly-people-chart .chart-container {
+	height: 100%;
+}
+
+.meeting-table-container {
+	margin-top: 15px;
+	background: rgba(255, 255, 255, 0.05);
+	border-radius: 8px;
+	padding: 15px;
+	height: 415px;
+	overflow-y: auto;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+}
+
+.meeting-table-container::-webkit-scrollbar {
+	display: none;
+}
+
+.meeting-table {
+	width: 100%;
+	border-collapse: collapse;
+	color: #fff;
+	font-size: 14px;
+	table-layout: fixed; /* 固定列宽 */
+}
+
+.meeting-table thead {
+	background: rgba(0, 150, 255, 0.2);
+}
+
+.meeting-table th {
+	padding: 12px 15px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 16px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	width: 25%; /* 平均分配列宽 */
+	word-wrap: break-word;
+	white-space: normal;
+}
+
+.meeting-table td {
+	padding: 12px 15px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+	width: 25%; /* 平均分配列宽 */
+	word-wrap: break-word;
+	white-space: normal;
+	text-align: center;
+}
+
+.meeting-table tr:hover {
+	background: rgba(255, 255, 255, 0.05);
+}
+
+
+.large-table-container {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 25px;
+  height: auto;
+  min-height: 430px;
+  max-height: 430px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.large-table-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* 放大版表格样式 */
+.large-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #fff;
+  font-size: 18px;
+  table-layout: fixed; /* 固定列宽 */
+}
+
+.large-table thead {
+  background: rgba(0, 150, 255, 0.25);
+}
+
+.large-table th {
+  padding: 20px 25px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+  width: 25%; /* 平均分配列宽 */
+  word-wrap: break-word;
+  white-space: normal;
+  background-color: ＃7B68EE;
+}
+
+.large-table td {
+  padding: 20px 25px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.08);
+  line-height: 1.8;
+  width: 25%; /* 平均分配列宽 */
+  word-wrap: break-word;
+  white-space: normal;
+  text-align: center;
+}
+
+.large-table tr:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* 会议状态样式 */
+.status-ongoing {
+  color: #4cd964;
+  background: rgba(76, 217, 100, 0.1);
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.status-upcoming {
+  color: #ff9500;
+  background: rgba(255, 149, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.status-pending {
+  color: #5ac8fa;
+  background: rgba(90, 200, 250, 0.1);
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+
+.simple-stats-section {
+  margin-top: 15px;
+ 
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.simple-stats-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.simple-stat-row {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.simple-stat-card {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 25px 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.simple-stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* 为每个卡片添加不同的顶部边框颜色 */
+.simple-stat-row:first-child .simple-stat-card:first-child {
+  border-top: 4px solid #3498db;
+}
+
+.simple-stat-row:first-child .simple-stat-card:last-child {
+  border-top: 4px solid #9b59b6;
+}
+
+.simple-stat-row:last-child .simple-stat-card:first-child {
+  border-top: 4px solid #e67e22;
+}
+
+.simple-stat-row:last-child .simple-stat-card:last-child {
+  border-top: 4px solid #1abc9c;
+}
+
+.simple-stat-content {
+  text-align: center;
+  width: 100%;
+}
+
+.simple-stat-line1 {
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 10px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.simple-stat-line2 {
+  font-size: 32px;
+  color: #add8e6;
+  font-weight: bold;
+  margin-bottom: 10px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.simple-stat-line3 {
+  font-size: 18px;
+  color: #add8e6;
+  font-weight: bold;
+  text-align: center;
+}
+
+.unit {
+  color: #f1c40f; /* 黄色 */
+  margin: 0 8px;
+}
+
+.blue-number {
+  color: #add8e6;
+  font-weight: bold;
+  margin: 0 4px;
+}
